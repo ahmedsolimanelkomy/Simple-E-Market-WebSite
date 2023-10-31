@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+        <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+<body>
+        <div class="header" style=" width: 100%;">
+            <ul>
+                <li id="logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></li>
+                <li id="search"> <label for="search">Search </label><input type="text" name="search" value=""></li>
+                <li id="login"><a href="login.html"><img src="images/login.png" alt="" class="icon" width="20px"
+                            height="20px">Login</a></li>
+                <li id="cart"><a href=""> <img src="images/cart.png" alt="" class="icon" width="20px" height="20px">Cart</a>
+                </li>
+            </ul>
+        </div><br>
+
+        <h2>Responsive Checkout Form</h2>
+        <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on
+            top of each other instead of next to each other.</p>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form action="/action_page.php">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="New York">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="NY">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label>
+                                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                </div>
+            </div>
+            
+            </div>
+        </div>            <div class="footer">
+                <div class="email">
+                    <div id="email">
+                        <h4>New to NOON Store?</h4><br>
+                        <p>Subscribe to our Newsletter to get updates on our latest offers!</p><br>
+                        <div class="buttons">
+                            <input type="email" placeholder="Enter E-mail address">
+                            <button class="gender">MALE</button>
+                            <button class="gender">FEMALE</button>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <div class="freeapp">
+                            <h5>DOWNLOAD THE NOON APP</h5>
+                            <p>Access more features</p>
+                        </div>
+                        <div class="appstore">
+                            <a href=""><i class="fa fa-apple"></i>Apple Store</a>
+                            <a href=""><i class="fa fa-google"></i>Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactus">
+                    <div class="help">
+                        <ul class="helplist">
+                            <li>
+                                <h5>LET US HELP YOU</h5>
+                            </li>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">How to Shop with us</a></li>
+                            <li><a href="">Shipping and delivery</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Bulk Purchase</a></li>
+                            <li><a href="">Advertise with us</a></li>
+                            <li><a href="">Report a product</a></li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <ul class="aboutlist">
+                            <li>
+                                <h5>ABOUT US</h5>
+                            </li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li><a href="">Privary Policy</a></li>
+                            <li><a href="">&copy; Copy Rights Reserved To ahmed soliman</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="join">
+                    <div class="socials">
+                        <h5>FOLLOW US</h5>
+                        <ul>
+                            <li><a href="#" class="fa fa-facebook">F</a></li>
+                            <li><a href="#" class="fa fa-twitter">T</a></li>
+                            <li><a href="#" class="fa fa-linkedin">IN</a></li>
+                            <li><a href="#" class="fa fa-youtube">Y</a></li>
+                            <li><a href="#" class="fa fa-instagram">I</a></li>
+                        </ul>
+                    </div>
+                    <div class="payment">
+                        <h5>PAYMENT METHODS</h5>
+                        <ul>
+                            <li><a href=""><i class="fa fa-cc-visa"></i></a></li>
+                            <li><a href=""><i class="fa fa-cc-mastercard"></i></a></li>
+                            <li><a href=""><i class="fa fa-paypal"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+</body>
+</html>
